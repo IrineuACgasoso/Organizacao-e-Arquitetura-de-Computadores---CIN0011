@@ -13,11 +13,10 @@ module multiplier_tb;
     // Instancia o Top Combinacional
     multiplier_top dut (.*);
 
-    // Gerador de Clock (ainda util para dar ritmo aos testes)
+    // Gerador de clock
     initial clk = 0;
     always #5 clk = ~clk;
 
-    // Tarefa de teste ultra-rapida
     task automatic run_test (
         input logic [31:0] a,
         input logic [31:0] b,
@@ -32,9 +31,7 @@ module multiplier_tb;
             multiplier_in   = b;
             start           = 1'b1;
 
-            // Nao precisamos mais esperar ciclos! 
-            // O resultado ja esta pronto aqui.
-            #1; // Pequeno delay de 1ns so para estabilidade visual na Wave
+            #1; // Pequeno delay de 1ns
 
             if (product === expected)
                 $display("[PASS] %s: %0d x %0d = %0d", test_name, a, b, product);
@@ -52,16 +49,16 @@ module multiplier_tb;
         multiplicand_in = '0; multiplier_in = '0;
         #20 rst_n = 1;
 
-        // --- Lista completa de casos do roteiro ---
-        run_test(32'd0,          32'd0,          "zero x zero");        // Adicionado
-        run_test(32'd1,          32'd1,          "1 x 1");              // Adicionado
-        run_test(32'd6,          32'd7,          "6 x 7");              // Já tinha
-        run_test(32'd255,        32'd255,        "255 x 255");          // Já tinha
-        run_test(32'd1000,       32'd1000,       "1000 x 1000");        // Adicionado
-        run_test(32'hFFFFFFFF,   32'd1,          "MAX x 1");            // Adicionado
-        run_test(32'hFFFFFFFF,   32'hFFFFFFFF,   "MAX x MAX");          // Já tinha
-        run_test(32'hAAAAAAAA,   32'h55555555,   "Padrao alternado");   // Adicionado
-        run_test(32'd123456789,  32'd987654321,  "Grande x Grande");    // Já tinha
+        // Lista completa de casos
+        run_test(32'd0,          32'd0,          "zero x zero");        
+        run_test(32'd1,          32'd1,          "1 x 1");              
+        run_test(32'd6,          32'd7,          "6 x 7");              
+        run_test(32'd255,        32'd255,        "255 x 255");          
+        run_test(32'd1000,       32'd1000,       "1000 x 1000");      
+        run_test(32'hFFFFFFFF,   32'd1,          "MAX x 1");          
+        run_test(32'hFFFFFFFF,   32'hFFFFFFFF,   "MAX x MAX");       
+        run_test(32'hAAAAAAAA,   32'h55555555,   "Padrao alternado");  
+        run_test(32'd123456789,  32'd987654321,  "Grande x Grande");   
 
         $display("Simulacao de Alto Desempenho Concluida.");
         $finish;
