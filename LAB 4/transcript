@@ -1,0 +1,128 @@
+# Compile of multiplier_tb.sv was successful.
+# Compile of multiplier_top.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.multiplier_tb
+# vsim -gui work.multiplier_tb 
+# Start time: 10:56:43 on Apr 06,2026
+# Loading sv_std.std
+# Loading work.multiplier_tb
+# Loading work.multiplier_top
+add wave -r /*
+run
+# [PASS] zero x zero: 0 x 0 = 0
+# [PASS] 1 x 1: 1 x 1 = 1
+# [PASS] 6 x 7: 6 x 7 = 42
+# [PASS] 255 x 255: 255 x 255 = 65025
+# [PASS] 1000 x 1000: 1000 x 1000 = 1000000
+# [PASS] MAX x 1: 4294967295 x 1 = 4294967295
+# [PASS] MAX x MAX: 4294967295 x 4294967295 = 18446744065119617025
+# [PASS] Padrao alternado: 2863311530 x 1431655765 = 4099276458915470450
+add wave -r /*
+# Break key hit
+vsim -gui work.multiplier_tb
+# End time: 11:01:20 on Apr 06,2026, Elapsed time: 0:04:37
+# Errors: 0, Warnings: 2
+# vsim -gui work.multiplier_tb 
+# Start time: 11:01:20 on Apr 06,2026
+# Loading sv_std.std
+# Loading work.multiplier_tb
+# Loading work.multiplier_top
+add wave -r /*
+run
+# [PASS] zero x zero: 0 x 0 = 0
+# [PASS] 1 x 1: 1 x 1 = 1
+# [PASS] 6 x 7: 6 x 7 = 42
+# [PASS] 255 x 255: 255 x 255 = 65025
+# [PASS] 1000 x 1000: 1000 x 1000 = 1000000
+# [PASS] MAX x 1: 4294967295 x 1 = 4294967295
+# [PASS] MAX x MAX: 4294967295 x 4294967295 = 18446744065119617025
+# [PASS] Padrao alternado: 2863311530 x 1431655765 = 4099276458915470450
+# [PASS] Grande x Grande: 123456789 x 987654321 = 121932631112635269
+# Simulacao de Alto Desempenho Concluida.
+# ** Note: $finish    : C:/Users/Lenovo/Documents/GitHub/Organizacao-e-Arquitetura-de-Computadores---CIN0011/LAB 4/multiplier_tb.sv(64)
+#    Time: 101 ns  Iteration: 0  Instance: /multiplier_tb
+# 1
+# Break in Module multiplier_tb at C:/Users/Lenovo/Documents/GitHub/Organizacao-e-Arquitetura-de-Computadores---CIN0011/LAB 4/multiplier_tb.sv line 64
+vsim -gui work.multiplier_tb
+# End time: 11:03:26 on Apr 06,2026, Elapsed time: 0:02:06
+# Errors: 0, Warnings: 1
+# vsim -gui work.multiplier_tb 
+# Start time: 11:03:26 on Apr 06,2026
+# Loading sv_std.std
+# Loading work.multiplier_tb
+# Loading work.multiplier_top
+add wave -r /*
+run
+# [PASS] zero x zero: 0 x 0 = 0
+# [PASS] 1 x 1: 1 x 1 = 1
+# [PASS] 6 x 7: 6 x 7 = 42
+# [PASS] 255 x 255: 255 x 255 = 65025
+# [PASS] 1000 x 1000: 1000 x 1000 = 1000000
+# [PASS] MAX x 1: 4294967295 x 1 = 4294967295
+# [PASS] MAX x MAX: 4294967295 x 4294967295 = 18446744065119617025
+# [PASS] Padrao alternado: 2863311530 x 1431655765 = 4099276458915470450
+# [PASS] Grande x Grande: 123456789 x 987654321 = 121932631112635269
+# Simulacao de Alto Desempenho Concluida.
+# ** Note: $finish    : C:/Users/Lenovo/Documents/GitHub/Organizacao-e-Arquitetura-de-Computadores---CIN0011/LAB 4/multiplier_tb.sv(64)
+#    Time: 101 ns  Iteration: 0  Instance: /multiplier_tb
+# 1
+# Break in Module multiplier_tb at C:/Users/Lenovo/Documents/GitHub/Organizacao-e-Arquitetura-de-Computadores---CIN0011/LAB 4/multiplier_tb.sv line 64
+# Compile of multiplier_tb.sv was successful.
+# Compile of multiplier_top.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.multiplier_tb
+# End time: 11:10:03 on Apr 06,2026, Elapsed time: 0:06:37
+# Errors: 0, Warnings: 2
+# vsim -gui work.multiplier_tb 
+# Start time: 11:10:03 on Apr 06,2026
+# Loading sv_std.std
+# Loading work.multiplier_tb
+# Loading work.multiplier_top
+add wave -r /*
+run
+# [PASS] zero x zero: 0 x 0 = 0
+# [PASS] 1 x 1: 1 x 1 = 1
+# [PASS] 6 x 7: 6 x 7 = 42
+# [PASS] 255 x 255: 255 x 255 = 65025
+# [PASS] 1000 x 1000: 1000 x 1000 = 1000000
+# [PASS] MAX x 1: 4294967295 x 1 = 4294967295
+# [PASS] MAX x MAX: 4294967295 x 4294967295 = 18446744065119617025
+# [PASS] Padrao alternado: 2863311530 x 1431655765 = 4099276458915470450
+# [PASS] Grande x Grande: 123456789 x 987654321 = 121932631112635269
+# Simulacao de Alto Desempenho Concluida.
+# ** Note: $finish    : C:/Users/Lenovo/Documents/GitHub/Organizacao-e-Arquitetura-de-Computadores---CIN0011/LAB 4/multiplier_tb.sv(64)
+#    Time: 101 ns  Iteration: 0  Instance: /multiplier_tb
+# 1
+# Break in Module multiplier_tb at C:/Users/Lenovo/Documents/GitHub/Organizacao-e-Arquitetura-de-Computadores---CIN0011/LAB 4/multiplier_tb.sv line 64
+# Compile of multiplier_tb.sv was successful.
+# Compile of multiplier_top.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of multiplier_tb.sv was successful.
+# Compile of multiplier_top.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.multiplier_tb
+# End time: 11:15:31 on Apr 06,2026, Elapsed time: 0:05:28
+# Errors: 0, Warnings: 3
+# vsim -gui work.multiplier_tb 
+# Start time: 11:15:31 on Apr 06,2026
+# Loading sv_std.std
+# Loading work.multiplier_tb
+# Loading work.multiplier_top
+add wave -r /*
+run
+# [PASS] zero x zero: 0 x 0 = 0
+# [PASS] 1 x 1: 1 x 1 = 1
+# [PASS] 6 x 7: 6 x 7 = 42
+# [PASS] 255 x 255: 255 x 255 = 65025
+# [PASS] 1000 x 1000: 1000 x 1000 = 1000000
+# [PASS] MAX x 1: 4294967295 x 1 = 4294967295
+# [PASS] MAX x MAX: 4294967295 x 4294967295 = 18446744065119617025
+# [PASS] Padrao alternado: 2863311530 x 1431655765 = 4099276458915470450
+# [PASS] Grande x Grande: 123456789 x 987654321 = 121932631112635269
+# Simulacao de Alto Desempenho Concluida.
+# ** Note: $finish    : C:/Users/Lenovo/Documents/GitHub/Organizacao-e-Arquitetura-de-Computadores---CIN0011/LAB 4/multiplier_tb.sv(64)
+#    Time: 101 ns  Iteration: 0  Instance: /multiplier_tb
+# 1
+# Break in Module multiplier_tb at C:/Users/Lenovo/Documents/GitHub/Organizacao-e-Arquitetura-de-Computadores---CIN0011/LAB 4/multiplier_tb.sv line 64
+# End time: 12:33:58 on Apr 06,2026, Elapsed time: 1:18:27
+# Errors: 0, Warnings: 1

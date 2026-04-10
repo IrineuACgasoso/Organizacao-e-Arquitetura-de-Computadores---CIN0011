@@ -24,7 +24,7 @@ module multiplier_tb;
     );
         logic [63:0] expected;
         begin
-            expected = 64'(a) * 64'(b);
+            expected = 64'($unsigned(a)) * 64'($unsigned(b));
 
             @(negedge clk);
             multiplicand_in = a;
@@ -63,3 +63,4 @@ module multiplier_tb;
         $display("Simulacao de Alto Desempenho Concluida.");
         $finish;
     end
+endmodule

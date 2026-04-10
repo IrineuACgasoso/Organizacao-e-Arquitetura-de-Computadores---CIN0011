@@ -12,9 +12,7 @@ module multiplier_top (
     output logic        done
 );
 
-    
-    assign product = 64'(multiplicand_in) * 64'(multiplier_in);
-
+    assign product = 64'($unsigned(multiplicand_in)) * 64'($unsigned(multiplier_in));
     assign done = start;
 
 endmodule
