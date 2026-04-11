@@ -1,0 +1,12 @@
+# Compile of sc_alu.sv was successful.
+# Compile of sc_alu_ctrl.sv was successful.
+# Compile of sc_control.sv was successful.
+# Compile of sc_cpu.sv was successful.
+# Compile of sc_cpu_tb.sv was successful.
+# Compile of sc_datapath.sv was successful.
+# Compile of sc_dmem.sv was successful.
+# Compile of sc_imem.sv was successful.
+# Compile of sc_regfile.sv was successful.
+# Compile of sc_sign_ext.sv was successful.
+# Compile of sc_top.sv was successful.
+# 11 compiles, 0 failed with no errors.
