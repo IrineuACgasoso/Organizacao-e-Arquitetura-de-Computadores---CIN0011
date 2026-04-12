@@ -11,14 +11,14 @@ module sc_control (
     output logic [1:0] ALUOp
 );
 
-    // Definição dos Opcodes suportados (RISC-V Standard)
+    // Definição dos Opcodes suportados
     localparam R_TYPE = 7'b0110011; // add, sub, and, or, slt
     localparam LOAD   = 7'b0000011; // lw
     localparam STORE  = 7'b0100011; // sw
     localparam BRANCH = 7'b1100011; // beq
 
     always_comb begin
-        // --- 1. SET DEFAULTS (Prevenção de Latches) ---
+        // --- DEFAULTS  ---
         ALUSrc   = 1'b0;
         MemtoReg = 1'b0;
         RegWrite = 1'b0;
@@ -27,7 +27,7 @@ module sc_control (
         Branch   = 1'b0;
         ALUOp    = 2'b00;
 
-        // --- 2. LOGIC CASE ---
+        // --- LOGIC ---
         case (Opcode)
             R_TYPE: begin
                 RegWrite = 1'b1; // Escreve no registrador de destino
