@@ -1,6 +1,5 @@
 
 *.wlf
 *.vcd
-*.mti
 work/
 .work/
